@@ -1,0 +1,157 @@
+/* 🌿 KK FARM MAIN THEME */
+:root {
+    --green: #2E7D32;
+    --green-light: #4CAF50;
+    --green-dark: #1B5E20;
+    --brown: #8D6E63;
+    --brown-light: #D7CCC8;
+    --cream: #F1F8E9;
+    --text-dark: #263238;
+    --white: #FFFFFF;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: var(--green-dark);
+    color: var(--white);
+}
+
+.navbar a {
+    color: var(--white);
+    margin-left: 14px;
+    text-decoration: none;
+}
+.navbar a.logout { color: red; }
+
+/* CONTAINER */
+.container {
+    padding: 20px;
+}
+
+/* DASHBOARD CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: var(--white);
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: var(--green-light);
+    color: var(--white);
+}
+
+/* LOGIN PAGE */
+.login-body {
+    background: var(--green-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    background: var(--white);
+    padding: 30px;
+    width: 300px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.login-card input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 10px;
+    background: var(--green);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* FORM CARD */
+.form-card {
+    background: var(--white);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.form-card button {
+    width: 100%;
+    padding: 12px;
+    background: var(--green);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.form-card button:hover {
+    background: var(--green-dark);
+}
+
+/* TABLE */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover {
+    background: var(--cream);
+}
+
+.delete-btn {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.table td:nth-child(7) {
+    font-weight: bold;
+    color: var(--green-dark);
+}
